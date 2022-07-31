@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="shortcut icon"
+      href="/profile-card-component-main/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+
+    <main class="flex">
+    <template id="template" name="component-name">
+        <article class="card">
+          <img
+            src="/profile-card-component-main/images/bg-pattern-card.svg"
+            class="card-header"
+            alt="header image"
+          />
+          <div class="card-body">
+            <img
+              src="/profile-card-component-main/images/image-victor.jpg"
+              class="card-body-img"
+              alt="image victor"
+            />
+            <h1 class="card-body-title">
+              Victor Charst <span class="card-body-title-age">26</span>
+            </h1>
+            <p class="card-body-text">London</p>
+          </div>
+  
+  
+          <div class="card-footer">
+              <div class="card-footer-social">
+                  <h3>80K</h3>
+                  <p>Ataque</p>
+              </div>
+              <div class="card-footer-social">
+                  <h3>803K</h3>
+                  <p>Especial</p>
+              </div>
+              <div class="card-footer-social">
+                  <h3>1.4K</h3>
+                  <p>Defensa</p>
+              </div>  
+          </div>
+  
+  
+        </article>
+      </template>
+    </main>
+
+    <script src="./js/app.js" defer ></script>
+  </body>
+</html>
