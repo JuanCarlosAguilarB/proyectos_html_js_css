@@ -4,24 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilos.css">
-    <title>Person list</title>
+    <title>Listado de Personas</title>
+    <link href="css/estilos.css" rel="stylesheet"/>
 </head>
 <body onload="mostrarPersonas()">
-<div class="contenedor" id="cabecero">
-<h1>Persons list</h1>
-</div>    
+    <div class='contenedor' id='cabecero'>
+        <h1>Listado de Personas</h1>
+    </div>   
 
-<div class="contenedor">
-    <div class="elemento">
-        <ul id="personas">
-            <li>Juan</li>
-        </ul>
+    <div class='contenedor'>
+        <div class='elemento'>
+            <ul id='personas'>
+                <!--<li>Juan Perez</li>-->
+            </ul>
+        </div>
     </div>
-    
-</div>
 
-<script src="js/main.js"></script>  
-<script src="js/personas.js"></script>  
+    <div class="contenedor">
+        <div style='text-align: center;'>
+            <button style='cursor: pointer' onclick="agregarPersona()">+</button>
+        </div>
+        <form id='forma'>
+            <input type="text" id='nombre' placeholder="Nombre"/>
+            <input type='text' id='apellido' placeholder="Apellido"/>
+        </form>
+    </div>
+
+    <script src='js/persona.js'></script> 
+    <script src='js/app.js'></script> 
 </body>
 </html>
