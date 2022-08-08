@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+<style>
+        :root {
+      --white: #FFFFFF;
+      --black: #000000;
+      --very-light-pink: #C7C7C7;
+      --text-input-field: #F7F7F7;
+      --hospital-green: #ACD9B2;
+      --sm: 14px;
+      --md: 16px;
+      --lg: 18px;
+    }
+    body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    }
+    .product-detail{
+        width: 360px;
+        padding-bottom: 24px;
+        position: absolute;
+        right: 0;
+    }
+
+    .product-detail-detail-close{
+        background-color: var(--white);
+        position: absolute;
+        height: 14px;
+        width: 14px;
+        top: 24px;
+        left: 24px;
+        z-index: 2;
+        padding: 12px;
+        border-radius: 50%;
+    }
+
+
+    .product-detail-detail-close:hover{
+        cursor: pointer;
+    }
+    .product-detail > img:nth-child(2){
+        width: 100%;
+        height: 360px;
+        object-fit: cover;
+        border-radius: 0 0 20px  20px;
+    }
+    .product-info{
+        margin: 24px 24px 0 24px;
+    }
+    .product-info p:nth-child(1){
+        font-weight: bold;
+        font-size: var(--md);
+        margin-top: 0;
+        margin-bottom: 4px;
+    }
+    .product-info p:nth-child(2){
+        font-size: var(--md);
+        color:var(--very-light-pink);  
+        margin-top: 0;
+        margin-bottom: 36px;
+    }
+    .product-info p:nth-child(3){
+        font-size: var(--sm);
+        color:var(--very-light-pink);  
+        margin-top: 0;
+        margin-bottom: 36px;
+    }
+    .primary-button {
+        width: 100%;
+        background-color: var(--hospital-green);
+        border: none;
+        border-radius: 8px;
+        color: var(--white);
+        height: 50px;
+        cursor: pointer;
+        font-size: var(--md);
+        font-weight: bold;
+      }
+      .add-to-car-button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+      }
+      @media  (max-width:640){
+        .product-detail{
+            width: 100%;
+        }
+      }
+</style>
+</head>
+<body>
+<aside class="product-detail">
+    <div class="product-detail-detail-close">
+        <img src="/icons/icon_close.png" alt="">
+
+    </div>
+
+<img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="bike" >
+<div class="product-info">
+<p>35$</p>
+<p>bike</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque tempore mollitia aut dolore numquam suscipit nobis illum corporis obcaecati ea! Maxime nobis repudiandae voluptas commodi aut nisi cumque sapiente eius!</p>
+<button class="primary-button add-to-car-button">
+    <img src="/icons/icon_shopping_cart.svg" alt="add to car">
+    add to car
+</button>
+</div>
+    </aside>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+<title>Document</title>
+<style>
+    :root {
+      --white: #FFFFFF;
+      --black: #000000;
+      --very-light-pink: #C7C7C7;
+      --text-input-field: #F7F7F7;
+      --hospital-green: #ACD9B2;
+      --sm: 14px;
+      --md: 16px;
+      --lg: 18px;
+    }
+    body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    }
+    .menu{
+        display: none;
+    }
+    .logo{
+        width: 100px;
+    }
+    nav{
+        display: flex;
+        /* width: 100%; */
+        justify-content: space-between;
+        padding: 0 24px;
+        height: 60px;
+        border: 1px solid var(--very-light-pink);
+    }
+    
+    
+    .navbar-left ul,.navbar-right ul{
+        list-style: none;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin: 0 12px; 
+        
+        
+    }
+    .navbar-left{
+        display: flex;
+        margin-left: 12px;
+    }
+    .nav-email{
+        color:var(--very-light-pink);
+        font-size: var(--sm);
+        margin-right: 12px;
+    }
+    .navbar-shopping-cart div{
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background-color: var(--hospital-green);
+        font-size: var(--sm);
+        font-weight: bold;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: -6px;
+        right: -10px;
+    }
+    .navbar-shopping-cart{
+/* para poder colocar el  estilo de compra al carrito, necesitamos que este sea relativo */
+        position: relative;
+    }
+    /* .navbar-right{
+        display: flex;
+        align-items: flex-end;
+        justify-content: right;
+        text-align: end;
+    } */
+    /* .navbar-right ul{
+        display: flex;
+        text-align:end;
+    } */
+    
+    .navbar-left ul a,.navbar-right ul a{
+        text-decoration: none;
+        color: var(--very-light-pink);
+        border: 2px solid var(--white);
+    } 
+    .navbar-left ul a:hover,.navbar-right ul a:hover{
+        color: var(--hospital-green );
+        border: 2px solid var(--hospital-green);
+        padding: 8px;
+        border-radius: 8px;
+    } 
+
+    @media (max-width: 640px){
+        .menu{
+            display: block;
+        }
+        .navbar-left ul {
+            display: none;
+        }
+        .nav-email{
+            display: none;
+        }
+    }
+    </style>
+    <nav>
+        <img src="/icons/icon_menu.svg" alt="menu" class="menu">
+        <div class="navbar-left">
+            <img src="/logos/logo_yard_sale.svg" alt="logo" class="logo"><body>
+                <ul>
+                    <li>
+                        <a href="/">All</a>
+                    </li>
+                    <li>
+                        <a href="/">Electronic</a>
+                    </li>
+                    <li>
+                        <a href="/">Clothes</a>
+                    </li>
+                    <li>
+                        <a href="/">Furnitures</a>
+                    </li>
+                    <li>
+                        <a href="/">Toys</a>
+                    </li>
+                    <li>
+                        <a href="/">Others</a>
+                    </li>
+                </ul>
+        </div>
+        <div class="navbar-right">
+            <ul>
+                <li class="nav-email">
+                    email@gmail.com
+                </li>
+                <li class="navbar-shopping-cart">
+                    <img src="./icons/icon_shopping_cart.svg" alt="">
+                    <div>2️</div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</body>
+</html>
