@@ -14,3 +14,8 @@ https://calculator-project-js-basic.netlify.app
 
 Listado de personas	
 https://persons-list-jspractic.netlify.app/
+
+reloj digital 
+https://reloj-digital-basijs.netlify.app/
+
+
